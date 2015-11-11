@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<checkstyle version="5.0">
+ <file name="/home/kubu-kzone/IdeaProjects/sparkTraining1/src/main/scala/org/kzone/sparkTraining1/test1.scala">
+  <error line="1" source="org.scalastyle.file.HeaderMatchesChecker" severity="warning" message="Header does not match expected text"/>
+  <error column="7" line="9" source="org.scalastyle.scalariform.ObjectNamesChecker" severity="warning" message="Object name does not match the regular expression '[A-Z][A-Za-z]*'"/>
+  <error column="4" line="22" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+  <error column="4" line="24" source="org.scalastyle.file.RegexChecker" severity="warning" message="Regular expression matched 'println'"/>
+ </file>
+</checkstyle>
