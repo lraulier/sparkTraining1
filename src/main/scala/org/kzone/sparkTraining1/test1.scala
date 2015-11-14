@@ -16,9 +16,9 @@ object test1 {
     val slices = if (args.length > 0) args(0).toInt else 2
     val n = 100000 * slices
     val count = spark.parallelize(1 to n, slices).map { i =>
-      val x = random * 2 - 1
+      val xx = random * 2 - 1
       val y = random * 2 - 1
-      if (x*x + y*y < 1) 1 else 0
+      if (xx*xx + y*y < 1) 1 else 0
     }.reduce(_ + _)
     println("DANS LE DELUGE DES MESSAGES D'INFOS LORS DE L'EXECUTION " +
       "DE NOTRE APPLICATION IMPOSSIBLE DE RETROUVER LE PETIT MESSAGE QUI SUIT ALORS AJOUTONS-EN UN MAXIMUM EN MAJUSCULE AVANT :)")
