@@ -12,10 +12,10 @@ object test1 {
     val conf = new SparkConf().setAppName("test1")
     .setMaster("local[2]")
 
-    val spark = new SparkContext(conf)
+    val sparkContext = new SparkContext(conf)
     val slices = if (args.length > 0) args(0).toInt else 2
     val n = 100000 * slices
-    val counter = spark.parallelize(1 to n, slices).map { i =>
+    val counter = sparkContext.parallelize(1 to n, slices).map { i =>
       val xx = random * 2 - 1
       val y = random * 2 - 1
       if (xx*xx + y*y < 1) 1 else 0
