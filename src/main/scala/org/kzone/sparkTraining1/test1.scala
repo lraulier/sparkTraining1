@@ -23,6 +23,6 @@ object test1 {
     println("DANS LE DELUGE DES MESSAGES D'INFOS LORS DE L'EXECUTION " +
       "DE NOTRE APPLICATION IMPOSSIBLE DE RETROUVER LE PETIT MESSAGE QUI SUIT ALORS AJOUTONS-EN UN MAXIMUM EN MAJUSCULE AVANT :)")
     println("Pi est " + 4.0 * counter / n)
-    spark.stop()
+    sparkContext.stop()
   }
 }
