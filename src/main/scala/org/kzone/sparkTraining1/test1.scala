@@ -8,6 +8,7 @@ import org.apache.spark.{SparkContext, SparkConf}
   * add some comment just for testing pot commit hook
   * another one
   * encore .....
+  * marche toujours pas
   */
 object test1 {
   def main (args: Array[String]) {
