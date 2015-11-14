@@ -6,7 +6,6 @@ import org.apache.spark.{SparkContext, SparkConf}
 /**
   * Created by kubu-kzone on 11/11/15.
   * add some comment just for testing pot commit hook
-  * kkkkk
   */
 object test1 {
   def main (args: Array[String]) {
